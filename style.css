@@ -409,7 +409,6 @@ span{
 
     #showcase-container h2, #span{
        font-size: 1.6rem;
-
     }
 
     #showcase-container p{
@@ -459,11 +458,11 @@ span{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin: 0 1rem;
     }
 
     .card{
-        margin: 1.4rem auto;
+        margin: 1.4rem 1rem;
     }
 
     .cards{
