@@ -186,8 +186,6 @@ span{
 
 /* Acquirements*/
 #acquirements{
-    /* background: #111;  */
-    /* background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%); */
     background-image: linear-gradient(to top, #0583f2 0%, #142850 100%);
     color: #e5e5e5;
 }
@@ -413,7 +411,7 @@ span{
         flex-wrap: wrap;
         margin: 0 auto;
         padding-top: 10rem;
-        width: 450px;
+        width: 350px;
     }
 
     #showcase-container h2, #span{
@@ -432,7 +430,9 @@ span{
     }
 
     #descricao{
-        margin: 1rem auto;
+        /* max-width: 400px; */
+        width: 90%;
+        margin: 1rem;
     }
 
     .showcase-img{
@@ -444,8 +444,8 @@ span{
     .img-show{
         margin: 0 auto;
         margin-top: 5rem;
-        height: 450px;
-        width: 750px;
+        height: 350px;
+        width: 450px;
     }
 
     #about {
