@@ -29,7 +29,7 @@ body{
 
 span{
     color: #0583f2;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 #span{
@@ -281,7 +281,8 @@ span{
 
 /* Formação */
 #formacao{
-    background-image: linear-gradient(to top, #0583f2 0%, #142850 100%);
+    /* background-image: linear-gradient(to top, #0583f2 0%, #142850 100%); */
+    background: #111;
     color: #e5e5e5;
 }
 
@@ -305,11 +306,59 @@ span{
     height: 64px;
     width: 64px;
 }
+/* Contact */
+.container-contato{
+    width: 100%;
+    display: flex;
+    flex-direction: flex;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.form-contact input, textarea{
+    width: 45%;
+    display: flex;
+    padding: .6rem;
+    margin: .4rem auto;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+    padding: .6rem 1rem;
+    border-radius: 15px;
+    border-style: none;
+    background: #4895ff;
+    color: #eee;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: #0583f2;
+}
+
+.img-contato{
+    height: 350px;
+    margin: 1rem 5rem;
+}
 
 /* Footer */
 #footer {
     background: #111;
     color: #e5e5e5;
+    text-align: center;
+    padding: 1rem;
 }
 
 @media (max-width: 1290px){
@@ -349,6 +398,61 @@ span{
 }
 
 @media (max-width: 768px){
+
+    .box-form p{
+       text-align: center;
+    }    
+
+    .container-contato{
+        display: block;
+    }
+
+    .img-contato{
+        display: none;
+    }
+
+    #logo{
+        display: flex;
+        font-size: 1.2rem;
+        margin: auto; 
+    }
+  
+    span {
+        font-size: 1.2rem;
+        margin-left: .4rem;
+        display: flex;
+    }
+
+    .enviar{
+        width: 70%;
+        margin: 0.4rem auto;
+        padding: .4rem;
+        border-radius: 15px;
+        border-style: none;
+        background: #4895ff;
+        color: #eee;
+        transition: 2s;
+    }
+
+    .enviar:hover{
+        background: #0583f2;
+    }
+
+    .form-contact{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .form-contact input, textarea{
+        width: 70%;
+        padding: .4rem;
+        margin: .4rem auto;
+        border-radius: 10px;
+        border-style: none;
+    }
 
     #btn-mobile{
         display: flex;
@@ -403,7 +507,7 @@ span{
         flex-direction: column;
         flex-wrap: wrap;
         margin: 0 auto;
-        padding-top: 10rem;
+        padding-top: 8rem;
         width: 350px;
     }
 
@@ -437,7 +541,7 @@ span{
 
     .img-show{
         margin: 0 auto;
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
         height: 350px;
         width: 450px;
     }
