@@ -7,6 +7,10 @@
     --bluewhite: #00909e;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -399,6 +403,19 @@ span{
 
 @media (max-width: 768px){
 
+
+    h2{
+        display: flex;
+    }
+
+    .headline{
+       display: block;
+    }
+
+    p{
+        display: flex;
+    }
+
     .box-form p{
        text-align: center;
     }    
@@ -540,10 +557,10 @@ span{
     }
 
     .img-show{
+        display: block;
         margin: 0 auto;
-        /* margin-top: 5rem; */
-        height: 350px;
-        width: 450px;
+        height: 300px;
+        width: 400px;
     }
 
     #about {
