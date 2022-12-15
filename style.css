@@ -24,7 +24,7 @@ body{
 }
 
 #logo {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     transition: .6s;
     text-transform: uppercase;
@@ -32,13 +32,18 @@ body{
 }
 
 span{
-    color: #0583f2;
+    background-image: linear-gradient(45deg, #0b41be, #2d61ca, #3b82d6, #43a3e1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
     font-size: 1.4rem;
 }
 
 #span{
     color: #0583f2;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    margin: 0;
 }
 
 #nav {
@@ -55,7 +60,7 @@ span{
     padding: 1rem;
     align-items: center;
     justify-content: space-between;
-    background: #111;
+    background: #121214;
     color: #eee;
     height: 80px;
 }
@@ -84,23 +89,23 @@ span{
     display: none;
 }
 
-/* Show case */
+/* ShowCase */
 #showcase{
     height: 100vh;
     display: flex;
     justify-content: start;
     align-items: center;
     color: #eee;
-    background: #111;
+    background: #121214;
     /*Overlay*/
     background-blend-mode: color;
 }
 
 #showcase-container {
     text-align: justify;
-    margin-left: 3rem;
+    margin-left: 5rem;
     max-width: 700px;
-    width: 100%;
+    width: 60%;
 }
 
 #showcase-container h2 {
@@ -114,26 +119,30 @@ span{
 
 .img-show{
     margin-top: 2rem;
-    height: 450px;
-    max-width: 500px;
-    width: auto;
+    border-radius: 50%;
+    height: 300px;
+    max-width: 300px;
+    margin-left: 5rem;
+    border: #0583f2 solid 1px;
+    padding: .2rem;
 }   
 
 .btn {
     display: inline-block;
     padding: .6rem 3rem;
     font-size: 1.1rem;
-    background: #0583f2;
+    background-image: linear-gradient(45deg, #0b41be, #2d61ca, #3b82d6, #43a3e1);
     color: #eee;
     border-radius: 15px;
     transition: background 1s ease;
     margin-top: 15px;
     text-decoration: none;
+    margin-right: 0.4rem;
 }
 
-.btn:hover {
-    cursor: pointer;
-    background: #142850;
+.btn:nth-child(2){
+    border: 1px solid #43a3e1;
+    background: transparent;
 }
 
 /* About */
@@ -171,21 +180,10 @@ span{
     height: 400px;
     width: 350px;
 }
-.redes{
-    display: flex;
-    justify-content: center;
-}
-
-.icon{
-    height: 30px;
-    width: 30px;
-    margin: 0 .6rem;
-    margin-top: 1rem;
-}
 
 /* Acquirements*/
 #acquirements{
-    background-image: linear-gradient(to top, #0583f2 0%, #142850 100%);
+    background-image: linear-gradient(45deg, #0b41be, #2d61ca, #3b82d6, #43a3e1);
     color: #e5e5e5;
 }
 
@@ -201,10 +199,10 @@ span{
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 30px;
     margin: 20px;
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
     transition: all 0.3s ease-out;
-    background: #111;
+    background: #121214;
 }
 
 .one {
@@ -229,11 +227,11 @@ span{
 
 .image{
     margin-top: .6rem;
-    height: 50px;
-    width: 50px;
+    height: 4rem;
+    width: 4rem;
 }
-/* Projects*/
 
+/* Projects*/
 .cards{
     display: flex;
     flex-direction: row;
@@ -256,6 +254,13 @@ span{
     margin: 1rem auto;
 }
 
+.card-project-img{
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
 .btn-project{
     display: flex;
     justify-content: center;
@@ -276,17 +281,9 @@ span{
     background: #142850;
 }
 
-.card-project-img{
-    height: 200px;
-    width: 300px;
-    border-radius: 15px;
-    margin-bottom: 1rem;
-}
-
 /* Formação */
 #formacao{
-    /* background-image: linear-gradient(to top, #0583f2 0%, #142850 100%); */
-    background: #111;
+    background: #121214;
     color: #e5e5e5;
 }
 
@@ -306,66 +303,43 @@ span{
 }
 
 .img-form{
-    margin-right: 1rem;
-    height: 64px;
-    width: 64px;
-}
-/* Contact */
-.container-contato{
-    width: 100%;
-    display: flex;
-    flex-direction: flex;
-}
-
-.form-contact{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem auto;
-}
-
-.form-contact input, textarea{
-    width: 45%;
-    display: flex;
-    padding: .6rem;
-    margin: .4rem auto;
-    border-radius: 10px;
-    border-style: none;
-}
-
-.enviar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 30%;
-    padding: .6rem 1rem;
-    border-radius: 15px;
-    border-style: none;
-    background: #4895ff;
-    color: #eee;
-    transition: 2s;
-    cursor: pointer;
-}
-
-.enviar:hover{
-    background: #0583f2;
-}
-
-.img-contato{
-    height: 350px;
-    margin: 1rem 5rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 /* Footer */
 #footer {
-    background: #111;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    background: #121214;
     color: #e5e5e5;
     text-align: center;
     padding: 1rem;
 }
 
-@media (max-width: 1290px){
+.redes{
+    border-top: #eee 1px solid;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    height: 24px;
+    width: 24px;
+    margin: 0 .6rem;
+    margin-top: 1rem;
+}
+
+#rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+@media (max-width: 1200px){
     .card-project{
         width: 100%;
     }
@@ -403,6 +377,16 @@ span{
 
 @media (max-width: 768px){
 
+    .showcase-img{
+        margin: auto;
+        padding-top: 7rem;
+    }
+
+    .img-show{
+        height: 300px;
+        width: 300px;
+        margin: 0;
+    }
 
     h2{
         display: flex;
@@ -416,18 +400,6 @@ span{
         display: flex;
     }
 
-    .box-form p{
-       text-align: center;
-    }    
-
-    .container-contato{
-        display: block;
-    }
-
-    .img-contato{
-        display: none;
-    }
-
     #logo{
         display: flex;
         font-size: 1.2rem;
@@ -438,37 +410,6 @@ span{
         font-size: 1.2rem;
         margin-left: .4rem;
         display: flex;
-    }
-
-    .enviar{
-        width: 70%;
-        margin: 0.4rem auto;
-        padding: .4rem;
-        border-radius: 15px;
-        border-style: none;
-        background: #4895ff;
-        color: #eee;
-        transition: 2s;
-    }
-
-    .enviar:hover{
-        background: #0583f2;
-    }
-
-    .form-contact{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 1rem auto;
-    }
-
-    .form-contact input, textarea{
-        width: 70%;
-        padding: .4rem;
-        margin: .4rem auto;
-        border-radius: 10px;
-        border-style: none;
     }
 
     #btn-mobile{
@@ -517,19 +458,34 @@ span{
 
     #showcase{
         display: block;
+        height: 800px;
     }
+
 
     #showcase-container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin: 0 auto;
-        padding-top: 8rem;
-        width: 350px;
+        padding-top: 3rem;
+        width: 400px;
     }
 
-    #showcase-container h2, #span{
+    #showcase-container h2, #span,p{
        font-size: 1.6rem;
+       margin: auto;
+    }
+
+    #span{
+        margin-bottom: 1.4rem;
+    }
+
+    .showcase-btn{
+        display: flex;
+    }
+
+    a.btn-git {
+        padding: .6rem 3.3rem;
     }
 
     #showcase-container p{
@@ -539,32 +495,29 @@ span{
     #showcase-container .btn{
         text-align: center;
         width: 200px;
-        /* margin: 0 auto; */
     }
 
     #descricao{
-        /* max-width: 400px; */
         width: 90%;
         margin: 1rem;
     }
 
     .showcase-img{
         max-width: 450px;
-        width: 90%;
+        width: 100%;
         display: flex;
         text-align: center;
         justify-content: center;
     }
 
-    .img-show{
-        display: block;
-        margin: 0 auto;
-        height: 300px;
-        width: 400px;
-    }
-
     #about {
         display: block;
+    }
+
+    #about p{
+        text-align: justify;
+        margin: auto;
+        padding: 1rem;
     }
 
     .img-about{
@@ -594,5 +547,110 @@ span{
 
     .card-project{
         margin: 1.4rem auto;
+    }
+
+    #footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px){
+    
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        color: #e7e7e7;
+        cursor: pointer;
+        gap: .5rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #0d0d0d;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0px 1rem;
+        border-bottom: 2px solid #e7e7e7;
+    }
+
+    #showcase-container h2, #span,p{
+        margin: auto;
+    }
+ 
+    #span{
+        margin-bottom: 1.4rem;
+    }
+
+    .showcase-btn{
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+    #hamburger{
+        width: 20px;
+        border-top: 2px solid #a5befa;
+        z-index: 1000;
+    }
+
+    .showcase-img{
+        display: flex;
+    }
+
+    .img-show{
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    #showcase-container{
+        font-size: .6rem;
+        padding-top: 3rem;
+    }
+
+    #showcase{
+        height: 100%;
+        height: 750px;
+    }
+
+    #container-formacao p{
+        display: flex;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    #about p{
+        text-align: justify;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    #footer p{
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
     }
 }
