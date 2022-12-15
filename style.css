@@ -629,6 +629,7 @@ span{
     #showcase-container{
         font-size: .6rem;
         padding-top: 3rem;
+        width: 300px;
     }
 
     #showcase{
@@ -642,10 +643,22 @@ span{
         text-align: center;
     }
 
+    .showcase-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     #about p{
         text-align: justify;
         margin: auto;
         padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .img-about{
+        width: 300px;
     }
 
     #footer p{
