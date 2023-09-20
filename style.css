@@ -93,7 +93,7 @@ span{
     display: none;
 }
 
-/* ShowCase */
+/* SHOWCASE */
 #showcase{
     height: 100vh;
     display: flex;
@@ -145,11 +145,12 @@ span{
 }
 
 .btn:nth-child(2){
-    border: 1px solid #43a3e1;
+    border: 1px solid #2d61ca;
     background: transparent;
+    color: #2d61ca;
 }
 
-/* About */
+/* ABOUT */
 .headline {
     font-size: 2.2rem;
     text-align: center;
@@ -160,6 +161,10 @@ span{
     display: flex;
     justify-content: center;
     margin: 0.6rem 0;
+}
+
+#button-lg{
+   margin: auto;
 }
 
 #descricao {
