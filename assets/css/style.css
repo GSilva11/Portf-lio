@@ -23,6 +23,10 @@ body{
     background: #e8f1f2;
 }
 
+.destaque{
+    font-size: 1rem;
+}
+
 #logo {
     font-size: 1.4rem;
     font-weight: bold;
@@ -530,8 +534,8 @@ span{
         margin: 0 auto;
     }
 
-    .desc-proj{
-        font-size: .2rem;
+    .desc-proj p{
+        font-size: 1rem;
     }
 
     .card-project{
