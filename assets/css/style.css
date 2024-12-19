@@ -23,6 +23,10 @@ body{
     background: #e8f1f2;
 }
 
+.esconder {
+    visibility: hidden;
+}
+
 .destaque{
     font-size: 1rem;
 }
@@ -66,7 +70,8 @@ span{
     justify-content: space-between;
     background: #121214;
     color: #eee;
-    height: 80px;
+    height: 60px;
+    z-index: 1000;
 }
 
 #menu {
@@ -162,9 +167,12 @@ span{
 }
 
 #about {
-    display: flex;
-    justify-content: center;
-    margin: 0.6rem 0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 0.6rem auto;
+
 }
 
 #button-lg{
@@ -173,20 +181,18 @@ span{
 
 #descricao {
     display: grid;
-    flex-direction: column;
-    justify-content: space-between;
     max-width: 600px;
     width: 100%;
 }
 
-.figure{
-    display: flex;
-    flex-direction: column;
+#descricao p {
+    margin: 0.6rem auto;
 }
 
 .img-about{
     height: 400px;
     width: 350px;
+    
 }
 
 /* Acquirements*/
@@ -503,6 +509,8 @@ span{
 
     #about {
         display: block;
+        width: 100%;
+        margin: auto;
     }
 
     #about p{
